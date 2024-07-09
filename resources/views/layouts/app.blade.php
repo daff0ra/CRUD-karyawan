@@ -8,6 +8,8 @@
     <style>
         body {
             display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
         .sidebar {
             min-width: 250px;
@@ -25,6 +27,10 @@
             padding: 20px;
             width: 100%;
         }
+        .sidebar-header {
+            padding: 15px;
+            background: #495057;
+        }
     </style>
 </head>
 <body>
@@ -34,6 +40,9 @@
             <h4 class="text-white">Sidebar</h4>
         </div>
         <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('home') }}">Halaman Utama</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('karyawans.index') }}">Daftar Karyawan</a>
             </li>
